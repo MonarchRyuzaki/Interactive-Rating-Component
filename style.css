@@ -1,0 +1,151 @@
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: rgb(124, 135, 152);
+    --DarkBlue: rgb(37, 45, 55);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --ButtonBG: hsla(217, 12%, 63%, 0.13);
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    color: var(--White);
+    background-color: var(--VeryDarkBlue);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.rating-state, .thank-you{
+    max-width: 300px;
+    background-color: var(--DarkBlue);
+}
+
+.logo-wrap{
+    width: 40px;
+    height: 40px;
+    background-color: var(--ButtonBG);
+    border-radius: 50%;
+}
+
+.logo{
+    width: 15px;
+    position: relative;
+    top: 12px;
+    left: 12px
+}
+
+.value{
+    position: relative;
+    top: 12px;
+    left: 16px;
+}
+
+.give-rating, label, .appreciate{
+    color: var(--LightGrey);
+}
+
+.give-rating{
+    margin-bottom: 25px;
+}
+
+label{
+    width: 40px;
+    height: 40px;
+    background-color: hsla(217, 12%, 63%, 0.13);
+    border-radius: 50%;
+}
+
+.rating-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.rating-submit{
+    display: block;
+}
+
+.rating-submit{
+    background-color: var(--Orange);
+    color: white;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.rating-state, .thank-you{
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.rating-state h2 {
+    margin-bottom: 10px;
+}
+
+label:hover{
+    background-color: var(--Orange);
+    color: white;
+    font-weight: 700;
+}
+
+input[type="radio"]:checked + label{
+    background-color: var(--MediumGrey);
+    color: White;
+    font-weight: 700;
+}
+
+.rating-submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+    font-weight: 700;
+}
+
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-done-logo{
+    width: 45%;
+}
+
+.given-rating{
+    color: var(--Orange);
+    background-color: var(--ButtonBG);
+    width: 160px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+
+.appreciate{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.hide{
+    display: none;
+}
